@@ -10,7 +10,7 @@ $('#name-confirmed').click(function () {
 
     if(names != "") {
         list.push(names)
-        $('#res').html(`${list} `)
+        $('#res').html(`${list.join('<br>')}`)
     } else {
         $('#res').text('Preencha o campo!')
     }
